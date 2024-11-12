@@ -76,9 +76,9 @@ A robust, real-time security solution for monitoring network traffic, detecting 
 ## 🎬 Running the Application
 
 To start the application, run:
-
-```bash
+ ```bash
 streamlit run main.py
+ ```
 # DDOS - APP
 
 The application will be available at [http://localhost:8501](http://localhost:8501).
