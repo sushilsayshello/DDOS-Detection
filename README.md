@@ -27,8 +27,6 @@ A robust, real-time security solution for monitoring network traffic, detecting 
 └── README.md               # Project documentation
 
 
-# DDOS - APP
-
 ## 🚀 Getting Started
 
 ## Prerequisites
