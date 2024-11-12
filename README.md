@@ -31,14 +31,14 @@ A robust, real-time security solution for monitoring network traffic, detecting 
 
 ## 🚀 Getting Started
 
-### Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - Libraries listed in `requirements.txt`
 - Twilio account for SMS alerts
 - Gmail account or SMTP settings for email verification
 
-### Installation
+## Installation
 
 1. Clone the repository:
 
@@ -62,16 +62,16 @@ A robust, real-time security solution for monitoring network traffic, detecting 
 
 ## 🔧 Configuration
 
-### Twilio Setup (for SMS alerts):
+## Twilio Setup (for SMS alerts):
 
 1. Set up your Twilio account to get the Account SID and Auth Token.
 2. Update `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_PHONE_NUMBER` in `main.py`.
 
-### Email Setup (for email verification):
+## Email Setup (for email verification):
 
 1. Configure `SMTP_SERVER`, `SMTP_PORT`, `EMAIL_ADDRESS`, and `EMAIL_PASSWORD` in `main.py`.
 
-### Database:
+## Database:
 
 1. Ensure the `security_app.db` SQLite database is created using the `init_db()` function in `database.py`.
 
