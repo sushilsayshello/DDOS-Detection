@@ -13,18 +13,19 @@ A robust, real-time security solution for monitoring network traffic, detecting 
 
 ## 🗂️ Project Structure
 
-- **main.py**: Main landing page for login and registration
-- **dashboard.py**: Dashboard page for logged-in users
-- **auth.py**: User authentication functions
-- **database.py**: Database connection and schema setup
-- **monitoring.py**: Real-time traffic monitoring and DDoS detection
-- **vulnerability_scanner.py**: Vulnerability scanning functions
-- **utils.py**: Utility functions (e.g., hashing)
-- **logs.py**: Logging setup for user and system events
-- **models**
-  - **tuned_xgboost_model.pkl**: Pretrained model for DDoS detection
-- **README.md**: Project documentation
-
+```plaintext
+├── main.py                 # Main landing page for login and registration
+├── dashboard.py            # Dashboard page for logged-in users
+├── auth.py                 # User authentication functions
+├── database.py             # Database connection and schema setup
+├── monitoring.py           # Real-time traffic monitoring and DDoS detection
+├── vulnerability_scanner.py # Vulnerability scanning functions
+├── utils.py                # Utility functions (e.g., hashing)
+├── logs.py                 # Logging setup for user and system events
+├── models
+│   └── tuned_xgboost_model.pkl # Pretrained model for DDoS detection
+└── README.md               # Project documentation
+```
 
 
 ## 🚀 Getting Started
