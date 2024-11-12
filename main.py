@@ -41,3 +41,11 @@ if not st.session_state['logged_in']:
                 st.session_state['username'] = username
                 st.success("Logged in successfully!")
             else:
+                st.warning("Incorrect username or password.")
+
+# Redirect to the dashboard if logged in
+if st.session_state['logged_in']:
+    st.write(f"Welcome, {st.session_state['username']}!")
+    st.write("You are now logged in.")
+    if st.button("Go to Dashboard"):
+        import dashboard  # Directly load the dashboard content

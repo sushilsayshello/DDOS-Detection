@@ -56,4 +56,22 @@ if st.sidebar.button("View DDoS History"):
     conn = sqlite3.connect('security_app.db')
     history_df = pd.read_sql_query("SELECT * FROM ddos_history", conn)
     conn.close()
-    st.write(history_df) if not history_df.empty else st.write("No DDoS events recorde
+    st.write(history_df) if not history_df.empty else st.write("No DDoS events recorded.")
+
+# Vulnerability Scanner
+st.subheader("Website Vulnerability Scanner")
+url = st.text_input("Enter the URL to scan for vulnerabilities")
+if st.button("Scan Website"):
+    if url:
+        results = vulnerability_scan(url)
+        st.write("Scan Results:")
+        for result in results:
+            st.write(result)
+    else:
+        st.write("Please enter a URL to scan.")
+
+# Logout Button
+if st.button("Logout"):
+    st.session_state['logged_in'] = False
+    st.session_state.pop('username', None)
+    st.write("You have been logged out. Please return to the main page to log in again.")
